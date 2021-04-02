@@ -15,7 +15,9 @@
 <body class="p-3 mb-2 bg-light text-dark">
 <div class="container">
 	<h3><ins>Contact Info</ins></h3>
-	<br> <p style="color: red;">${succMsg}</p>
+	<br> <b style="color: olive;">${succMsg}</b>
+	        <b style="color: red;">${failMsg}</b>
+	        <b style="color: fuchsia;">${updateSucc}</b>
 	<form:form action="saveContact?contactId=${contact.contactId}" method="POST" modelAttribute="contact">
 
 		<table>

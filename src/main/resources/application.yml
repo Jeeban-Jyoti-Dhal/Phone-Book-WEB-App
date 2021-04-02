@@ -2,7 +2,7 @@ server:
   port: 9090
 spring:
   datasource:
-    data-password: 
+    data-password: null
     data-username: sa
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb
@@ -10,4 +10,14 @@ spring:
     view:
       prefix: /views/
       suffix: .jsp
-      
+
+phonebook:
+ messages:
+       contactSavedSucc: contact saved successfully
+       contactSaveFail: Failed to save the contact
+       contactUpdateSucc: Contact updated successfully
+       contactUpdateFail: Failed to update the contact
+       contactDeleteSucc: Contact deleted sucessfully
+       contactDeleteFail: Failed to Delete the Contact
+       
+       

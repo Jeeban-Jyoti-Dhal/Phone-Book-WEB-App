@@ -23,7 +23,8 @@
 	<hr>
 	<div class="container">
 		<a href="load-form" class="btn btn-danger">+Add New Contact</a>
-		${deletesucc}
+		<b style="color: yellow;">${deletesucc}</b>
+		<b style="color: red;">${deletefail}</b>
 		<table class="table table-success table-striped">
 			<thead>
 				<tr>
