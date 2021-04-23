@@ -20,21 +20,11 @@ public class ContactServiceImpl implements ContactService {
 	@Override
 	public boolean saveOrUpdateContact(Contact contact) {
 		Contact savedObj = repository.save(contact);
-		/*
-		 * if (savedObj.getContactId() != null) { // #1 return true; } else { return
-		 * false; }
-		 */
-
-		/* return (savedObj.getContactId()!=null ? true :false); */ // #2
-
 		return savedObj.getContactId() != null;
 	}
 
 	@Override
 	public List<Contact> getAllContacts() {
-		/*
-		 * List<Contact> findAll = repository.findAll(); return findAll;
-		 */
 		return repository.findAll();
 	}
 
